@@ -8,9 +8,10 @@
 * Go to the deployed app [click here](https://tdg101.herokuapp.com)
 
 * Use the email id provided
-Email             | Password
------------------ | -----------------
-tinker@tinker.com | tinker12345
+
+| Username          | Password      | 
+| ----------------- | ------------- | 
+| tinker@tinker.com | tinker12345   | 
 
 (this user has PREFILLED DATA for testing the app)
 
