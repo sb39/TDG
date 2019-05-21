@@ -8,11 +8,11 @@
 * Go to the deployed app [click here](https://tdg101.herokuapp.com)
 
 * Use the email id provided
-    Email             | Password
-    ----------------- | -----------------
-    tinker@tinker.com | tinker12345
+Email             | Password
+----------------- | -----------------
+tinker@tinker.com | tinker12345
 
-    (this user has PREFILLED DATA for testing the app)
+(this user has PREFILLED DATA for testing the app)
 
 * Use different functionalities:
     * CREATE , READ, UPDATE & DELETE and view the similar items that forms IKIGAI.
