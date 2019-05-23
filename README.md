@@ -11,8 +11,8 @@
 
 | Username            | Password       | No_of_Feeds |
 | ------------------- | -------------- | ----------- |
-| tinker@tinker.com   | tinker12345    | 13          |
-| tinker2@tinker.com  | tinker12345    | 2           |   
+| ikigai@ikigai.com   | ikigai12345    | 13          |
+| ikigai2@ikigai.com  | ikigai12345    | 2           |   
 
 (this user has PREFILLED DATA for testing the app)
 
