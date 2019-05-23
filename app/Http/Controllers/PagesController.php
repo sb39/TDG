@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 class PagesController extends Controller
 {
     public function index(){
-        header( "refresh:5;url=/dashboard" );
+        header( "refresh:4;url=/dashboard" );
         $title = 'IKIGAI APP';
         // $maxTime = 5;
         if (Auth::check()){
