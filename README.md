@@ -1,6 +1,6 @@
 ##  🕵️ IKIGAI - ANALYZER 🕵️
 ----
-![Screenshot (23)](https://user-images.githubusercontent.com/28492382/58095136-eae83f00-7bef-11e9-9c95-d43c57db9f68.png)
+![FotoJet](https://user-images.githubusercontent.com/28492382/58258602-a8119d00-7d90-11e9-980a-d7eec160c0c1.jpg)
 ----
 
 ### How to run the application ? 
@@ -9,11 +9,13 @@
 
 * Use the email id provided
 
-| Username          | Password      | 
-| ----------------- | ------------- | 
-| tinker@tinker.com | tinker12345   | 
+| Username            | Password       | No_of_Feeds |
+| ------------------- | -------------- | ----------- |
+| tinker@tinker.com   | tinker12345    | 13          |
+| tinker2@tinker.com  | tinker12345    | 2           |   
 
 (this user has PREFILLED DATA for testing the app)
+
 
 * Use different functionalities:
     * CREATE , READ, UPDATE & DELETE and view the similar items that forms IKIGAI.
