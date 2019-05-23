@@ -28,7 +28,6 @@ class DashboardController extends Controller
         $user_id = auth()->user()->id;
         $user = User::find($user_id);
         $users = Feed::all('title', 'category', 'user_id', 'user_name');
-        // return count($user->feeds);
         return view('dashboard')->with(array('Feeds'=> $user->feeds,'users'=> $users));
     }
 }

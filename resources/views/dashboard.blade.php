@@ -45,11 +45,30 @@
                 </div>
             </div>
         </div>
+        @php
+        $show = 0;
+        $l_counter=0;
+        $g_counter=0;
+        $e_counter=0;
+        $w_counter=0;
+                
+        foreach($Feeds as $feed)
+           {
+                if($feed->category=="L"){$l_counter++;}
+                if($feed->category=="G"){$g_counter++;}
+                if($feed->category=="E"){$e_counter++;}
+                if($feed->category=="W"){$w_counter++;}
+            }
+        if(($l_counter && $g_counter && $e_counter && $w_counter)>=1)
+        {
+            $show = 1;
+        }
+        @endphp
         <div class="col-md-7">
             <div class="card">
                 <div class="card-header">My PURPOSE Formation Categories</div>
                 <div class="card-body">
-                        @if(count($users)>0 && count($Feeds)>8)
+                        @if(count($users)>0 && $show == 1)
                         <table class="table text-center table-striped table-bordered">
                             <th>Passion</th>
                             <th>Profession</th>
