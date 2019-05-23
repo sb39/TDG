@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Feed;
 use App\User;
 
 class DashboardController extends Controller
@@ -26,6 +27,8 @@ class DashboardController extends Controller
     {
         $user_id = auth()->user()->id;
         $user = User::find($user_id);
-        return view('dashboard')->with('Feeds', $user->feeds);
+        $users = Feed::all('title', 'category', 'user_id', 'user_name');
+        // return count($user->feeds);
+        return view('dashboard')->with(array('Feeds'=> $user->feeds,'users'=> $users));
     }
 }

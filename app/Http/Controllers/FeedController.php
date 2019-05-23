@@ -25,10 +25,11 @@ class FeedController extends Controller
     public function index()
     {
         $Feed = Feed::orderBy('title', 'asc')->get(); 
-        $users = Feed::all('title', 'category');
+        $users = Feed::all('title', 'category', 'user_name');
         //paginate
         $Feeds = Feed::orderBy('created_at', 'desc')->paginate(5);
         return view('Feeds.index')->with(array('Feeds' => $Feeds,'users' => $users));
+        
     }
 
     /**
@@ -58,6 +59,7 @@ class FeedController extends Controller
         $Feed->title = $request->input('title');
         $Feed->category = $request->input('category');
         $Feed->user_id = auth()->user()->id;
+        $Feed->user_name = auth()->user()->name;
         $Feed->save();
 
         return redirect('/feeds/create')->with('success', 'Feed Created!');
